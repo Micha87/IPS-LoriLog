@@ -28,4 +28,18 @@ declare(strict_types=1);
 			$MQTTTopic = $this->ReadPropertyString('Topic');
         		$this->SetReceiveDataFilter('.*' . $MQTTTopic . '.*');
 		}
+		
+		public function ReceiveData($JSONString)
+    	{
+       	 	$this->SendDebug('JSON', $JSONString, 0);
+        	if (!empty($this->ReadPropertyString('Topic'))) {
+            	$Buffer = json_decode($JSONString);
+           	 	// Buffer decodieren und in eine Variable schreiben
+           	 	$this->SendDebug('MQTT Topic', $Buffer->Topic, 0);
+          	  	$this->SendDebug('MQTT Payload', $Buffer->Payload, 0);
+
+		}	
+		
+		
+		
 	}
