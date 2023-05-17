@@ -1,0 +1,12 @@
+{
+    "id": "{AA25D478-C134-67BF-D262-EA77CCBF541D}",
+    "name": "LoriLog-MQTT",
+    "author": "Michael Westphal",
+    "url": "https://github.com/Micha87/IPS-Lorilog",
+    "compatibility": {
+        "version": "6.0"
+    },
+    "version": "0.1",
+    "build": 1,
+    "date": 17
+}
