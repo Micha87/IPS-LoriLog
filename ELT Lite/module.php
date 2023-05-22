@@ -10,7 +10,7 @@ declare(strict_types=1);
 			
 			
 			$this->ConnectParent('{C6D2AEB3-6E1F-4B2E-8E69-3A1A00246850}');
-			$this->createVariablenProfiles();
+			//$this->createVariablenProfiles();
 			$this->RegisterPropertyString('Topic', "");
 	
 		}
@@ -37,9 +37,9 @@ declare(strict_types=1);
            	 	// Buffer decodieren und in eine Variable schreiben
            	 	$this->SendDebug('MQTT Topic', $Buffer->Topic, 0);
           	  	$this->SendDebug('MQTT Payload', $Buffer->Payload, 0);
-
+			
 		}	
-		
+		}
 		
 		
 	}
