@@ -1,4 +1,4 @@
-# ELT Lite
+# ERS Lite
 Beschreibung des Moduls.
 
 ### Inhaltsverzeichnis
